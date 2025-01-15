@@ -37,6 +37,7 @@ a {
 .main-content {
   display: grid;
   grid-template-columns: repeat(2, 500px);
+  grid-template-rows: auto;
   flex-wrap: wrap;
 }
 
@@ -71,7 +72,35 @@ p {
   background-color: #ee2211;
 }
 
-.top-right-block-img {
-  max-width: 100%;
-  display: block;
+h2 {
+  display: flex;
+  margin-right: 20px;
+  color: #c6c6c6;
+  text-align: right;
+  align-items: center;
+  font-size: 64px;
+}
+
+.bottom-right-block {
+  display: flex;
+  flex-direction: column;
+  padding: 70px 50px;
+  gap: 35px;
+  background-color: #fff;
+}
+
+.card {
+  display: grid;
+  column-gap: 20px;
+  row-gap: 10px;
+  align-items: center;
+  grid-template-columns: auto auto;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  width: 100%;
+  padding: 40px;
 }
